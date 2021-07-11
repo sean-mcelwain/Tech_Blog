@@ -1,0 +1,36 @@
+<!-- Navbar -->
+<div>
+    <nav>
+      <ul>
+        <li class="post active">
+          <a href="/" id="yourPostBtn">Your Post</a>
+        </li>
+
+        <li class="post">
+          <a href="/addPost" id="newPostBtn">New Post</a>
+        </li>
+      </ul>
+    </nav>
+</div>
+    
+{{#if posts.length}}
+  <div class=" post-post">
+  <div id="yourpost">
+    {{#each posts as |post|}}
+
+    <div class="postItem">
+        <div><h4><a href="/post/{{post.id}}">{{post.name}}</a></h4></div>
+        <div><a href="/post/{{post.id}}" class="viewBtn">View</a>
+        <button data-id="{{post.id}}">DELETE</button>        
+        </div>
+    </div>
+
+
+    {{/each}}
+  </div>
+  </div>
+  {{/if}}
+
+  
+
+<script src="./js/homepage.js"></script>

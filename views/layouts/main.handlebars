@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tech Blog</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+      {{#if logged_in}} 
+      <nav class="form-control">
+        <p> Welcome {{user.name}} | <a href="/">Home</a> | 
+        <button id="logout">Logout</button></p>
+      </nav>
+      {{/if}}      
+        <div>
+            <h1>Tech Blog</h1>
+        </div>
+    </header>
+    <main>
+      <!-- Render from handlebars subparts -->
+      {{{ body }}}
+    </main>
+
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
