@@ -7,17 +7,19 @@
 </head>
 
 <body>
+  {{#if logged_in}}
     <header>
-      {{#if logged_in}} 
       <nav class="form-control">
         <p> Welcome {{user.name}} | <a href="/">Home</a> | 
-        <button id="logout">Logout</button></p>
+        <button id="logout" class="no-button">Logout</button></p>
       </nav>
-      {{/if}}      
+     
         <div>
             <h1>Tech Blog</h1>
         </div>
+
     </header>
+    {{/if}} 
     <main>
       <!-- Render from handlebars subparts -->
       {{{ body }}}

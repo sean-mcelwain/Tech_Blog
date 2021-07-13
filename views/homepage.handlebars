@@ -1,9 +1,9 @@
-<!-- Navbar -->
+<div class="blog-page">
 <div>
     <nav>
       <ul>
         <li class="post active">
-          <a href="/" id="yourPostBtn">Your Post</a>
+          <a href="/" id="yourPostBtn">Your Posts</a>
         </li>
 
         <li class="post">
@@ -14,7 +14,7 @@
 </div>
     
 {{#if posts.length}}
-  <div class=" post-post">
+  <div class=" post-list">
   <div id="yourpost">
     {{#each posts as |post|}}
 
@@ -30,7 +30,7 @@
   </div>
   </div>
   {{/if}}
-
+</div>
   
 
 <script src="./js/homepage.js"></script>

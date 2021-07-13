@@ -1,0 +1,120 @@
+body {
+    background-color: rgba(211, 211, 211, 0.158);
+}
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #3c7592;
+    color: #ffffff;
+    overflow: auto;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    }
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.no-button {
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	text-decoration: none;
+    color: #ffffff;
+    font-size: 100%;
+  }
+
+.blog-page {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: lightgrey;
+    color: darkslategrey;
+    overflow: auto;
+    
+}
+.blog-page a {
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+.post {
+    list-style-type: none;
+
+}
+
+.login-page {
+    text-align: center;
+    background-color:  #3c7592a6;
+    width: 400px;
+    margin: auto;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+.login-page a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.login-page a:hover {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.login-input {
+    min-height: 40px;
+    min-width: 300px;
+	background: white;
+	box-shadow: none;
+	border: transparent;
+    margin: 5px;
+    padding-left: 5px;
+    border-radius: 3px;
+}
+
+.login-button {
+    min-height: 40px;
+    min-width: 300px;
+	background: slategray;
+	box-shadow: none;
+	border: transparent;
+    margin: 5px;
+    padding-left: 5px;
+    color: #ffffff;
+}
+
+.login-button:hover {
+	background: #dbdada;
+    color: slategray;
+}
+
+.input-box {
+    min-height: 200px;
+    min-width: 300px;
+	background: white;
+	box-shadow: none;
+	border: transparent;
+    margin: 5px;
+    padding-left: 5px;
+    border-radius: 3px;
+}

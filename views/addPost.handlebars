@@ -1,9 +1,11 @@
+<div class="blog-page">
 <div>
     <nav>
       <ul>
-        <li class="post">
-          <a class="nav-link" href="/" id="yourPostBtn">Your Post</a>
+        <li class="post active">
+          <a href="/" id="yourPostBtn">Your Posts</a>
         </li>
+
         <li class="post">
           <a href="/addPost" id="newPostBtn">New Post</a>
         </li>
@@ -11,7 +13,7 @@
     </nav>
 </div>
  
- <div class="update-post-form" id="newPost">
+ <div id="newPost">
     <div>
       <div>
         <h2>Create a New Post</h2><br>
@@ -19,15 +21,17 @@
     </div>
     <form class="new-post-form">
       <div>
-        <input class="form-control" type="text" id="post-name" name="post-name" placeholder="Post Title" />
+        <input class="login-input form-control" type="text" id="post-name" name="post-name" placeholder="Post Title" />
       </div>
       <div>
-        <textarea class="form-control" id="post-desc" name="post-desc" placeholder="Post Body" ></textarea>
+        <textarea class="input-box form-control" id="post-desc" name="post-desc" placeholder="Post Body" ></textarea>
       </div>
       <div>
-        <button type="submit">Create</button>
+        <button class="login-button" type="submit">Create</button>
       </div>
     </form>
+</div>
+
 </div>
 
 <script src="./js/post.js"></script>

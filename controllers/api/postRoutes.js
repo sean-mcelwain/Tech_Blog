@@ -36,7 +36,6 @@ router.delete('/:id', withAuth, async (req, res) => {
   }
 });
 
-// Updates book based on its book_id
 router.put('/:id', async (req, res) => {
 
   const updatePost = await Post.update(

@@ -1,3 +1,4 @@
+<div class="blog-page">
 <div>
     <nav>
       <ul>
@@ -15,15 +16,16 @@
   <form action="#" method="post">
       <h2>Update Post</h2>   
       <div>
-        <input value={{name}} type="text" id="post-name" class="form-control" name="title" placeholder="Post Title" required="required">
+        <input value={{name}} type="text" id="post-name" class=" login-input form-control" name="title" placeholder="Post Title" required="required">
       </div>  
       <div>
-        <textarea type="text" class="form-control" id="post-desc" name="post" rows="11" placeholder="Post Body" required="required">{{description}}</textarea>
+        <textarea type="text" class="input-box form-control" id="post-desc" name="post" rows="11" placeholder="Post Body" required="required">{{description}}</textarea>
       </div>   
       <div>
-          <button type="submit" name="savePost" data-id="{{id}}" class="updateBtn">Save</button><br>
+          <button type="submit" name="savePost" data-id="{{id}}" class="updateBtn login-button">Save</button><br>
       </div>
   </form>
+</div>
 </div>
 <br>
   <div><center>Created by {{user.name}} on {{format_date date_created}}</center></div><br>
